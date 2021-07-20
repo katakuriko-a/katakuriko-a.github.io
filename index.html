@@ -20,11 +20,19 @@
 </head>
 <body>
   <section>
-      <img src="kua_tr.jpg" alt="くうあのアイコンです">
+      <img src="kua_tr.jpg" alt="くうあのアイコンです" id="trigger">
   <h1>小林空晏</h1>
-  <p>Webデザイナーの見習いです。日々勉強、頑張っています</p>
+  <p id="target">Webデザイナーの見習いです。日々勉強、頑張っています</p>
   <span class="btn"> <a href="fake.html">押すな！</a> </span>
   </section>
   <footer>(c)kuua.com</footer>
+  <script>
+    'use strict';
+    function process() {
+      document.getElementById('target').textContent = 'いえーい！';
+      document.getElementById('trigger').classList.add('changed');
+    }
+    document.getElementById('trigger').addEventListener('click',process);
+  </script>
 </body>
 </html>
