@@ -1,0 +1,300 @@
+
+body {
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+#menu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+  
+}
+.humberger {
+  display: none;
+  user-select: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (min-width:719px) {
+  .prf img {
+    margin-right: 40px;
+  }
+}
+@media (min-width:600px) {
+  .flex img {
+  margin-right: 32px;
+  }
+h2.ttl {
+  text-align: left;
+}
+
+}
+@media (max-width:600px) {
+  .mainv{
+    height: 600px;
+  }
+
+  #menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .humberger {
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    user-select: none;
+  }
+  .humberger ul {
+    list-style: none;
+  }
+  .humberger a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  background: rgba(212, 212, 212, 0.395);
+  position: fixed;
+}
+
+
+/* ヘッダー */
+.logo {
+  font-size: 20px;
+  line-height: 64px;
+  padding-left: 10px;
+  display: flex;
+  margin-left: 20px;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+.logo i {
+  font-size: 24px;
+  line-height: 64px;
+  margin-right: 8px;
+}
+
+nav >ul {
+list-style: none;
+display: flex;
+position: absolute;
+right: 0;
+top: 0%;
+margin: 0;
+margin-right: 20px;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 16px;
+  padding: 0;
+  line-height: 64px;
+}
+
+nav ul li:hover {
+opacity: 0.5;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  cursor: pointer;
+}
+.logo a {
+  color: #333;
+  text-decoration: none;
+}
+
+.mainv {
+  height: 700px;
+}
+
+
+/* メイン */
+main {
+width: 100%;
+height: 100%;
+
+/* background: violet; */
+}
+.prf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.prf > img {
+  width: 240px;
+  height: 240px;
+
+  border-radius: 50%;
+}
+
+.profile {
+  width: 240px;
+  margin: auto 0;
+}
+
+.profile h2 {
+  text-align: center;
+}
+/* スキル */
+.skils {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 8% 0 8%;
+  justify-content: center;
+
+}
+.skil h4 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.skil h5{
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+.skil {
+  margin-right: 3%;
+  margin-left: 3%;
+  text-align: center;
+}
+
+.skil-icon {
+  font-size: 100px;
+  color: rgb(82, 80, 80);
+  text-align: center;
+}
+
+.skil p {
+  width: 200px;
+  text-align: left;
+}
+
+
+
+
+.flex {
+  display: flex; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 5% 0 5%;
+  /* background: chocolate; */
+}
+
+.flex img {
+  width: 40%;
+
+  margin-bottom: 20px;
+  /* border-radius: 5%; */
+  
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  font-size: 48px;
+  font-family: 'Loto', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+
+
+
+.work1 {
+  margin-bottom: 40px;
+}
+.work2 {
+  margin-bottom: 40px;
+}
+.work3{
+  margin-bottom: 40px;
+}
+
+.ttl {
+  text-align: start;
+}
+
+.text p {
+  text-align: left;
+}
+
+.size {
+  font-size: 2.5em;
+  margin: 0 8px;
+}
+.icons {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.icons a {
+  color: #333;
+}
+
+.works img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+  font-weight: 100;
+}
+
+h3.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#works {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+#works.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+
+
+
